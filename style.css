@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 20px;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  width: 320px;
+}
+
+.head-card img {
+  width: 320px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.body-card {
+  text-align: center;
+  padding: 25px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.body-card p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: hsl(0, 0%, 50%);
+}
+
+.package {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: hsl(0, 0%, 96%);
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.menu__package {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.title__package {
+  font-weight: 700;
+}
+
+.price__package {
+  color: hsl(0, 0%, 50%);
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.package button {
+  background-color: hsl(0, 0%, 96%);
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+
+.package button:hover {
+  color: hsl(245, 75%, 65%);
+}
+
+.payment {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.payment:hover {
+  background-color: hsl(245, 75%, 65%);
+}
+
+.cancel {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 50%);
+  padding: 0px;
+}
+
+.cancel:hover {
+  color: hsl(0, 0%, 0%);
+}
+
+
+@media only screen and (min-width: 376px) {
+    body{
+        background-image: url('./images/pattern-background-desktop.svg');
+        background-repeat: no-repeat;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+    .head-card img {
+        width: 400px;
+      }
+    
+}
